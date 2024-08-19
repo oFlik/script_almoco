@@ -2,8 +2,6 @@ import sys
 from sqlite3 import connect
 from .basic_info import DB_PATH
 
-print(DB_PATH)
-
 try:
     cursor = connect(f"{DB_PATH}/fill_lunch.db")
 except Exception:
