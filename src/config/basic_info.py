@@ -11,6 +11,7 @@ load_dotenv(override=True, dotenv_path=os.path.join(extDataDir, '.env'))
 
 NAME = os.getenv("NAME")
 FORM_LINK = os.getenv("FORM_LINK")
+DB_PATH = os.getenv("DB_PATH")
 WAIT_TIME = 1
 
 divisions = [

@@ -1,11 +1,11 @@
 import sys
-from pathlib import Path
 from sqlite3 import connect
+from .basic_info import DB_PATH
 
-db_path = Path(__file__).parents[2]
+print(DB_PATH)
 
 try:
-    cursor = connect(f"{db_path}/fill_lunch.db")
+    cursor = connect(f"{DB_PATH}/fill_lunch.db")
 except Exception:
     raise ConnectionError("Não foi possível conectar ao banco de dados")
 
