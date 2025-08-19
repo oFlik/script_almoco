@@ -1,3 +1,3 @@
-from src.main import start_filler
+from src.core.main import start_filler
 
 start_filler()

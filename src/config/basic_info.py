@@ -2,8 +2,6 @@ from dotenv import load_dotenv
 import sys
 import os
 
-#load_dotenv(override=True)
-
 extDataDir = os.getcwd()
 if getattr(sys, 'frozen', False):
     extDataDir = sys._MEIPASS
@@ -13,6 +11,10 @@ NAME = os.getenv("NAME")
 FORM_LINK = os.getenv("FORM_LINK")
 DB_PATH = os.getenv("DB_PATH")
 WAIT_TIME = 1
+
+INITIAL_WAIT = 2
+QUESTIONS_WAIT = 1
+
 
 divisions = [
     "Desenvolvimento",

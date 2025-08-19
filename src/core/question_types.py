@@ -1,7 +1,7 @@
 from pyautogui import write
 from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
-from .config.basic_info import WAIT_TIME
+from ..config.basic_info import QUESTIONS_WAIT
 import time
 
 
@@ -19,7 +19,7 @@ def fill_dropdown(b, box, option):
     dropdown_menu = b.find_element(By.XPATH, box)
     dropdown_menu.click()
 
-    time.sleep(WAIT_TIME)
+    time.sleep(QUESTIONS_WAIT)
 
     for i in range(option):
         write(["down"])

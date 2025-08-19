@@ -1,6 +1,6 @@
-from .config.basic_info import FORM_LINK, divisions
-from .config.driver_config import config_webdriver
-from .config.database import get_div_data
+from ..config.basic_info import FORM_LINK, divisions
+from ..config.driver_config import config_webdriver
+from ..config.database import get_div_data
 from .filler import fill_form
 
 

@@ -3,4 +3,4 @@
 /build
 .env
 *.db
-/_pycache_
+__pycache__/
